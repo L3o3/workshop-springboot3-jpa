@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.educandoWeb.course.entities.Order;
+import com.educandoWeb.course.entities.OrderItem;
 import com.educandoWeb.course.repositories.OrderRepository;
 
 @Service
@@ -15,7 +16,7 @@ public class OrderService {
 	@Autowired
 	private OrderRepository repository;
 
-	public List<Order> findAll() {
+	public List<OrderItem> findAll() {
 		return repository.findAll();
 	}
 

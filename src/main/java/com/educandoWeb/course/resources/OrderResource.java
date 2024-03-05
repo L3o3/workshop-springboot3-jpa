@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.educandoWeb.course.entities.Order;
+import com.educandoWeb.course.entities.OrderItem;
 import com.educandoWeb.course.services.OrderService;
 
 @RestController
@@ -20,8 +21,8 @@ public class OrderResource {
 	private OrderService service;
 
 	@GetMapping
-	public ResponseEntity<List<Order>> findAll() {
-		List<Order> list = service.findAll();
+	public ResponseEntity<List<OrderItem>> findAll() {
+		List<OrderItem> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 
