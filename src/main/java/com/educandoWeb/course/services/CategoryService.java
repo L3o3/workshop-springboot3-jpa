@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.educandoWeb.course.entities.Category;
-import com.educandoWeb.course.resources.CategoryRepository;
+import com.educandoWeb.course.repositories.CategoryRepository;
 
 @Service
 public class CategoryService {
